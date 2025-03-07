@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Krub } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/layout/Navbar";
+import WhatsAppButton from "./components/button/WhatsAppButton";
+import Footer from "./components/layout/Footer";
+ 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const krub = Krub({
+  variable: "--font-krub",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // Adjust as needed
 });
 
 export const metadata: Metadata = {
@@ -24,10 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${krub.className} antialiased`}>
+        <Navbar />
         {children}
+        <WhatsAppButton />  
+        <Footer/>
       </body>
     </html>
   );
