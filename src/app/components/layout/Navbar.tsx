@@ -11,6 +11,7 @@ import {
   FaShoppingCart,
   FaTimes,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const categories = [
   {
@@ -44,10 +45,10 @@ export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState<number | null>(null);
   return (
     <>
-      <div className="w-full bg-primary text-secondary text-center py-1 font-medium">
+      <div className="w-full bg-primary text-secondary text-center py-1 font-medium text-sm md:text-lg">
         Get Up To 50% OFF Kitchen Items
       </div>
-      <ul className="py-2 flex justify-around border-b border-gray-300 text-xs md:text-sm">
+      <ul className="py-2 flex justify-around border-b border-gray-300 text-xs md:text-sm bg-white">
         <li className="flex items-center gap-3">
           <LuPhoneCall size={20} className="text-gray-600" /> (+1) 1234-567-890
         </li>
@@ -55,12 +56,12 @@ export default function Navbar() {
           <MdOutlineEmail size={20} className="text-gray-600" />
           example@domain.com
         </li>
-        <li className="flex items-center gap-3">
+        <li className="hidden md:flex items-center gap-3">
           <IoLocationOutline size={20} className="text-gray-600" />
           Dubai
         </li>
       </ul>
-      <header className="flex items-center justify-between p-4 bg-white max-w-[96%] mx-auto border-b border-gray-300">
+      <header className="flex items-center justify-between p-4 bg-white  max-w-[96%] mx-auto border-b border-gray-300">
         {/* Logo Section */}
         <div className="flex flex-col">
           <h1 className="text-2xl font-bold">Ecommerce</h1>
@@ -97,28 +98,13 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <div className="hidden md:flex justify-center bg-gray-50 p-3 py-4">
         {categories.map((category, index) => (
-          <div
-            key={index}
-            className="relative mx-4"
-            onMouseEnter={() => setDropdownOpen(index)}
-            onMouseLeave={() => setDropdownOpen(null)}
-          >
-            <button className="font-semibold hover:text-blue-600">
+          <div key={index} className="relative mx-4">
+            <Link
+              href={category.name}
+              className="font-semibold hover:text-primary cursor-pointer"
+            >
               {category.name}
-            </button>
-            {dropdownOpen === index && (
-              <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-300 shadow-lg z-10">
-                {category.subcategories.map((sub, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                  >
-                    {sub}
-                  </a>
-                ))}
-              </div>
-            )}
+            </Link>
           </div>
         ))}
       </div>
@@ -128,23 +114,12 @@ export default function Navbar() {
         <div className="md:hidden bg-gray-100 p-4 space-y-3">
           {categories.map((category, index) => (
             <div key={index} className="border-b pb-2">
-              <button
-                onClick={() =>
-                  setDropdownOpen(dropdownOpen === index ? null : index)
-                }
+              <Link
+                href={category.name}
                 className="w-full text-left font-semibold"
               >
                 {category.name}
-              </button>
-              {dropdownOpen === index && (
-                <div className="ml-4 mt-2 space-y-2">
-                  {category.subcategories.map((sub, i) => (
-                    <a key={i} href="#" className="block text-gray-600">
-                      {sub}
-                    </a>
-                  ))}
-                </div>
-              )}
+              </Link>
             </div>
           ))}
         </div>
@@ -152,5 +127,3 @@ export default function Navbar() {
     </>
   );
 }
-
- 

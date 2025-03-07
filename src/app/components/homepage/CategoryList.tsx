@@ -22,7 +22,8 @@ export default function CategoryList() {
                   src={category.image}
                   alt={category.name}
                   layout="fill"
-                  objectFit="contain" // Ensures the image fits inside the circle
+                  fill
+                  objectFit="contain" 
                 />
               </div>
               <h3 className="mt-3 font-semibold">{category.name}</h3>

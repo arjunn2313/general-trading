@@ -9,7 +9,7 @@ import Footer from "./components/layout/Footer";
 const krub = Krub({
   variable: "--font-krub",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // Adjust as needed
+  weight: ["400", "500", "600", "700"], 
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${krub.className} antialiased`}>
-        <Navbar />
+        <Navbar/>
         {children}
         <WhatsAppButton />  
         <Footer/>

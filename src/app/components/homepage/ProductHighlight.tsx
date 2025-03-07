@@ -30,7 +30,7 @@ const products = [
 
 export default function ProductHighlights() {
   return (
-    <section className="py-10">
+    <section className="py-10 px-3">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         {products.map((product) => (
           <div
@@ -43,7 +43,7 @@ export default function ProductHighlights() {
               </span>
               <h3 className="text-2xl font-bold mt-3">{product.title}</h3>
               <a href="#" className="text-primary font-semibold mt-2 block">
-                Shop Now
+                View Now
               </a>
             </div>
             <div className="flex justify-end mt-4">

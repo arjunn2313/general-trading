@@ -1,11 +1,8 @@
-import Image from "next/image";
 import Hero from "./components/homepage/Hero";
 import Features from "./components/homepage/Features";
 import CategoryList from "./components/homepage/CategoryList";
 import ProductHighlights from "./components/homepage/ProductHighlight";
-import HouseKeepingproduct from "./components/homepage/HouseKeeping";
-import HospitalityProducts from "./components/homepage/HospitalityProducts";
-import CoffeeMachines from "./components/homepage/CofeeMachine";
+import ProductList from "./components/homepage/ProductList";
 
 export default function Home() {
   return (
@@ -14,9 +11,9 @@ export default function Home() {
       <Features />
       <CategoryList />
       <ProductHighlights />
-      <HouseKeepingproduct />
-      <HospitalityProducts/>
-      <CoffeeMachines/>
+      <ProductList category="HouseKeeping" />
+      <ProductList category="Hospitality" />
+      <ProductList category="Coffee Machines" />
     </>
   );
 }
