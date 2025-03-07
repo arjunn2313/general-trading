@@ -61,7 +61,7 @@ export default function Hero() {
                   <h2 className="text-3xl md:text-6xl font-bold md:leading-relaxed">
                     {slide.title} <br /> {slide.subtitle}
                   </h2>
-                  <p className="text-lg mt-2">
+                  {/* <p className="text-lg mt-2">
                     <span className="text-primary font-semibold">
                       Old Price: {slide.oldPrice}
                     </span>{" "}
@@ -69,7 +69,7 @@ export default function Hero() {
                     <span className="text-green-400 font-semibold">
                       New Price: {slide.newPrice}
                     </span>
-                  </p>
+                  </p> */}
                   <button className="mt-4 bg-primary text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-red-600 transition">
                     View Products
                   </button>
