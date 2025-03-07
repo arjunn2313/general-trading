@@ -25,8 +25,8 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-10 px-3">
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-6 md:gap-0 py-4">
+    <section className="py-10 w-[95%] md:max-w-7xl   mx-auto">
+      <div className="  flex flex-wrap justify-center md:justify-between items-center gap-6 md:gap-0 py-4">
         {features.map((feature, index) => (
           <div
             key={index}
