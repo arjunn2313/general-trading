@@ -7,12 +7,15 @@ import { FaWhatsapp } from "react-icons/fa";
 
 interface Product {
   id: number;
-  description: string;
   image: string;
   brand?: string;
   price?: string | number;
+  sku: string | number;
   oldPrice?: string;
   discount?: string;
+  category: string;
+  supplier?: string;
+  description: string;
 }
 
 interface ProductCardProps {
@@ -52,16 +55,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <span className="text-red-600 font-bold text-lg">
             {product.price !== "" && `AED  ${product.price}`}
           </span>
-          {/* {product.oldPrice && (
-            <span className="text-gray-500 line-through ml-2">
-              {product.oldPrice}
-            </span>
-          )} */}
-          {/* {product.discount && (
-            <span className="ml-2 bg-green-500 text-white px-2 py-1 text-xs rounded">
-              {product.discount}
-            </span>
-          )} */}
         </div>
       </div>
 
