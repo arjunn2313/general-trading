@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 interface Product {
   id: number;
+  name?: string;
   image: string;
   brand?: string;
   price?: string | number;
