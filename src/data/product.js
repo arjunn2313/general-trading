@@ -15,7 +15,7 @@ const products = [
     image: "/product/recyclebin.webp",
     sku: "HS-GPX-218X4",
     description: "4 Compartment Recycle Bin",
-    price: 975,
+    price: "975",
     supplier: "NaN",
   },
   {
@@ -24,7 +24,7 @@ const products = [
     image: "/product/multipurposecart.webp",
     sku: "AF08173",
     description: "Multipurpose Cart ",
-    price: 575,
+    price: "575",
     supplier: "NaN",
   },
   {
@@ -33,7 +33,7 @@ const products = [
     image: "/product/airfreshnerdispenser.webp",
     sku: " SL502LED",
     description: "Air Freshener Dispenser",
-    price: 50,
+    price: "50",
     supplier: "NaN",
   },
   {
@@ -42,7 +42,7 @@ const products = [
     image: "/product/tissuedispensor.webp",
     sku: NaN,
     description: "Tissue Dispenser",
-    price: 60,
+    price: "60",
     supplier: "NaN",
   },
   {
@@ -51,7 +51,7 @@ const products = [
     image: "/product/vaccumcleaner.webp",
     sku: "TM109041",
     description: "Vacuum Cleaner (50LT)",
-    price: 5000,
+    price: "5000",
     supplier: "NaN",
   },
   {
@@ -60,7 +60,7 @@ const products = [
     image: "/product/trolly.webp",
     sku: "RSCA90489.0108",
     description: "Housekeeping Trolley",
-    price: 2900,
+    price: "2900",
     supplier: "NaN",
   },
   {
@@ -69,7 +69,7 @@ const products = [
     image: "/product/cautionfloor.jpg",
     sku: "AF03046",
     description: "Caution Sign Board",
-    price: 22,
+    price: "22",
     supplier: "NaN",
   },
   {
@@ -78,7 +78,7 @@ const products = [
     image: "/product/cocobrush.webp",
     sku: "COCO12 + CJ999",
     description: 'Brush 12" With Wooden Handle',
-    price: 8,
+    price: "8",
     supplier: "NaN",
   },
   {
@@ -87,7 +87,7 @@ const products = [
     image: "/product/ashtray.webp",
     sku: "JF959580SE",
     description: "Black Ashtray Bin",
-    price: 120,
+    price: "120",
     supplier: "NaN",
   },
   {
@@ -96,7 +96,7 @@ const products = [
     image: "/product/escalator.webp",
     sku: "\u00a0RTS559520002-00",
     description: "Escalator / Travelator Cleaner",
-    price: 24000,
+    price: "24000",
     supplier: "NaN",
   },
   {
@@ -105,7 +105,7 @@ const products = [
     image: "/product/manuelsweper.webp",
     sku: "RTSFLIPPER",
     description: "Manual Sweeper",
-    price: 1900,
+    price: "1900",
     supplier: "NaN",
   },
   {
@@ -114,7 +114,7 @@ const products = [
     image: "/product/garbagecan.webp",
     sku: "AF07501",
     description: "Garbage Can",
-    price: 210,
+    price: "210",
     supplier: "NaN",
   },
   {
@@ -123,7 +123,7 @@ const products = [
     image: "/product/luggagetrolley.webp",
     sku: "HS-1E-LUGGAGE\u00a0",
     description: "Luggage Trolley",
-    price: 2000,
+    price: "2000",
     supplier: "NaN",
   },
   {
@@ -132,7 +132,7 @@ const products = [
     image: "/product/outdoorrecyclebin.webp",
     sku: "HS-95A-TWIN BI",
     description: "Twin Bin",
-    price: 850,
+    price: "850",
     supplier: "NaN",
   },
   {
@@ -141,7 +141,7 @@ const products = [
     image: "/product/2apparmrntbin.webp",
     sku: "\u00a0HS-213-44LT",
     description: "2 Compartment   Bin",
-    price: 950,
+    price: "950",
     supplier: "NaN",
   },
   {
@@ -150,7 +150,7 @@ const products = [
     image: "/product/ashtraybin.webp",
     sku: "HS-110F-33LT",
     description: "Ashtray Bin 33LT",
-    price: 325,
+    price: "325",
     supplier: "NaN",
   },
   {
@@ -159,7 +159,7 @@ const products = [
     image: "/product/servicetrolley.webp",
     sku: "RSACE19 + RSANTA140 (2)",
     description: "Service Trolley",
-    price: 1050,
+    price: "1050",
     supplier: "NaN",
   },
   {
@@ -168,7 +168,7 @@ const products = [
     image: "/product/rideonsweeper.webp",
     sku: "RTSRB100ROOTSWEEP",
     description: "Ride On Sweeper",
-    price: 41000,
+    price: "41000",
     supplier: "NaN",
   },
   {
@@ -177,7 +177,7 @@ const products = [
     image: "/product/scrubberdrier.webp",
     sku: "RTSRB800RIDEONMACHIN",
     description: "Ride On Scrubber Drier",
-    price: 45000,
+    price: "45000",
     supplier: "NaN",
   },
   {
@@ -186,7 +186,7 @@ const products = [
     image: "/product/recyclebin6t.webp",
     sku: "HS-218E-2X30LT SSBIN",
     description: "Recycle Bin (60LT)",
-    price: 650,
+    price: "650",
     supplier: "NaN",
   },
   {
@@ -195,7 +195,7 @@ const products = [
     image: "/product/dustbinwithpedal.webp",
     sku: "HS-Y01-12LT SS BIN",
     description: "Dust Bin With Pedal 12LT",
-    price: 130,
+    price: "130",
     supplier: "NaN",
   },
   {
@@ -204,7 +204,7 @@ const products = [
     image: "/product/stainlesssteelcoatedustbin.webp",
     sku: "\u00a0JF96007826LT",
     description: "Slow Down Dust Bin With Pedal 26LT",
-    price: 155,
+    price: "155",
     supplier: "NaN",
   },
   {
@@ -213,7 +213,7 @@ const products = [
     image: "/product/coatedswingbin.webp",
     sku: "HS-110V-92.6LT SWING",
     description: "ss steel with brushed finsih+304 stainless steel Lid\u00a0",
-    price: 750,
+    price: "750",
     supplier: "NaN",
   },
   {
@@ -222,7 +222,7 @@ const products = [
     image: "/product/highspeedpolisher.webp",
     sku: "\u00a0TMSINGLE DISCUHS1500",
     description: "High Speed Polisher - TMB",
-    price: 6000,
+    price: "6000",
     supplier: "NaN",
   },
   {
@@ -231,7 +231,7 @@ const products = [
     image: "/product/2compartmentbin.webp",
     sku: "HS-52A-BIN IRON",
     description: "ecycle Bin - Hygiene System",
-    price: 900,
+    price: "900",
     supplier: "NaN",
   },
   {
@@ -240,7 +240,7 @@ const products = [
     image: "/product/doublemopbucket.webp",
     sku: "RSTRIS50",
     description: "Mop Bucket Trolley 50LT",
-    price: 370,
+    price: "370",
     supplier: "NaN",
   },
   {
@@ -249,7 +249,7 @@ const products = [
     image: "/product/wallmountautomatichandsoap.webp",
     sku: "SPHS600",
     description: "Wall Mount Automatic Hand Soap",
-    price: 65,
+    price: "65",
     supplier: "NaN",
   },
   {
@@ -258,7 +258,7 @@ const products = [
     image: "/product/centerpulltissue.webp",
     sku: "AZ1300TB",
     description: "Center Pull Tissue Dispenser",
-    price: 70,
+    price: "70",
     supplier: "NaN",
   },
   {
@@ -267,7 +267,7 @@ const products = [
     image: "/product/stainlesssteelhandsoapdispensor.webp",
     sku: "u00a0CJ9605",
     description: "Steel Hand Soap Dispenser",
-    price: 70,
+    price: "70",
     supplier: "NaN",
   },
   {
