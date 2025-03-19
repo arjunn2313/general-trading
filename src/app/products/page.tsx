@@ -89,7 +89,7 @@ export default function ProductPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product:Product) => (
-              <ProductCard product={product} key={product.id} />
+              <ProductCard product={{ ...product, price: product.price?.toString() }} />
             ))
           ) : (
             <p className="text-center col-span-full text-gray-500">
