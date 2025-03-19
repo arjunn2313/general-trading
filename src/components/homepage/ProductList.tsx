@@ -9,12 +9,12 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 interface Product {
   id: number;
-  description: string;
   image: string;
-  brand?: string;
-  price:  number;  
+  price: string | number;
+  sku: string | number;
   category: string;
-  sku?: string | number;  
+  supplier?: string;
+  description: string;
 }
 
 
