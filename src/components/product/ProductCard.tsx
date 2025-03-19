@@ -10,7 +10,7 @@ interface Product {
   description: string;
   image: string;
   brand?: string;
-  price: string;
+  price?: string | number;
   oldPrice?: string;
   discount?: string;
 }

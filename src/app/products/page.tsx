@@ -8,13 +8,16 @@ import Image from "next/image";
 
 interface Product {
   id: number;
-  name: string;
+  name?: string;
   image: string;
   brand?: string;
-  price: string;
+  price?: string | number;
+  sku: string | number;
   oldPrice?: string;
   discount?: string;
   category: string;
+  supplier?: string;
+  description: string;
 }
 
 export default function ProductPage() {
@@ -48,7 +51,6 @@ export default function ProductPage() {
       <div className=" md:block p-6">
         <h2 className="text-2xl font-bold mb-4">Categories</h2>
         <div className="md:overflow-hidden overflow-x-scroll flex gap-4 w-full snap-x snap-mandatory">
-
           {categories.map((subcategory, index) => (
             <div
               key={index}
@@ -90,7 +92,7 @@ export default function ProductPage() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {filteredProducts.length > 0 ? (
-            filteredProducts.map((product: Product) => (
+            filteredProducts.map((product:Product) => (
               <ProductCard product={product} key={product.id} />
             ))
           ) : (
