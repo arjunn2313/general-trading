@@ -8,13 +8,9 @@ import Image from "next/image";
 
 interface Product {
   id: number;
-  name?: string;
   image: string;
-  brand?: string;
-  price?: string | number;
+  price: string | number;
   sku: string | number;
-  oldPrice?: string;
-  discount?: string;
   category: string;
   supplier?: string;
   description: string;

@@ -7,13 +7,9 @@ import { FaWhatsapp } from "react-icons/fa";
 
 interface Product {
   id: number;
-  name?: string;
   image: string;
-  brand?: string;
   price?: string | number;
   sku: string | number;
-  oldPrice?: string;
-  discount?: string;
   category: string;
   supplier?: string;
   description: string;
@@ -25,7 +21,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const message = encodeURIComponent(
-    `Hello, I would like to know more about this product.\n\nName: ${product.description}\nBrand: ${product.brand}`
+    `Hello, I would like to know more about this product.\n\nName: ${product.description}\nBrand: ${product.category}`
   );
 
   return (
@@ -47,9 +43,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <h3 className="text-md font-semibold mt-3 text-center">
           {product.description}
         </h3>
-        {product.brand && (
-          <p className="text-gray-500 text-sm text-center">{product.brand}</p>
-        )}
+  
 
         {/* Pricing */}
         <div className="mt-2 flex items-center justify-center">
