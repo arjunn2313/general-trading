@@ -34,6 +34,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           width={200}
           height={200}
           className="object-contain overflow-hidden"
+          loading="lazy"
         />
       </div>
 

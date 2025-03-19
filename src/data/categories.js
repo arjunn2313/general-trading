@@ -4,7 +4,7 @@ export const houseKeeping = "House Keeping";
 export const displayCases = "Display Cases";
 export const iceMachines = "Cold Storage";
 export const dishAndGlass = "Dish Washer";
-export const iceAndBaking = "Ice & Baking Machines";
+export const iceAndBaking = "Ice Machine";
 
 export const categories = [
   {
@@ -25,15 +25,15 @@ export const categories = [
   },
   {
     name: iceMachines,
-    image: "/product/icemachine.jpg",
+    image: "/product/freezer-with-white-background-high-quality-ultra-hd.jpg",
   },
   {
     name: dishAndGlass,
-    image: "/product/icemachine.jpg",  
+    image: "/product/dishwasher-isolated-transparent-background.png",  
   },
   {
-    name: iceAndBaking,
-    image: "/product/icemachine.jpg",  
+    name:iceAndBaking,
+    image: "/product/mini-fridge-with-ice-lemons.jpg",  
   },
 ];
 

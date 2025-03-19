@@ -45,9 +45,10 @@ export default function ProductPage() {
         Home | Products
       </div>
 
-      <div className="hidden md:block p-6">
+      <div className=" md:block p-6">
         <h2 className="text-2xl font-bold mb-4">Categories</h2>
-        <div className="flex gap-4">
+        <div className="md:overflow-hidden overflow-x-scroll flex gap-4 w-full snap-x snap-mandatory">
+
           {categories.map((subcategory, index) => (
             <div
               key={index}
@@ -55,7 +56,7 @@ export default function ProductPage() {
               onClick={() => handleCategoryClick(subcategory.name)}
             >
               <div
-                className={`w-20 h-20  flex items-center justify-center    rounded-md overflow-hidden border-2 ${
+                className={`w-20 h-20  flex items-center justify-center  rounded-md overflow-hidden border-2 ${
                   categoryQuery && categoryQuery === subcategory.name
                     ? "border-primary "
                     : "border-gray-200"
@@ -65,12 +66,13 @@ export default function ProductPage() {
                 <Image
                   src={subcategory.image}
                   alt="Category Image"
-                  width={100}
-                  height={100}
-                  className="object-cover"
+                  width={80}
+                  height={80}
+                  className="object-cover "
+                  loading="lazy"
                 />
               </div>
-              <p className="mt-2 text-sm font-medium">{subcategory.name}</p>
+              <p className="mt-2  text-sm font-medium">{subcategory.name}</p>
             </div>
           ))}
         </div>
