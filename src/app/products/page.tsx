@@ -9,7 +9,7 @@ import Image from "next/image";
 interface Product {
   id: number;
   image: string;
-  price?: string;
+  price?: string | number;
   sku: string | number;
   category: string;
   supplier?: string;
