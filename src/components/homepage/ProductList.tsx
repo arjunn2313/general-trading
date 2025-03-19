@@ -7,15 +7,7 @@ import products from "../../data/product";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-type Product = {
-  id: number;
-  image: string;
-  price?: string | number;
-  sku: string | number;
-  category: string;
-  supplier?: string;
-  description: string;
-}
+ 
 
 
 interface ProductListProps {
@@ -60,7 +52,7 @@ const ProductList: React.FC<ProductListProps> = ({ category }) => {
           }}
           className="mt-6"
         >
-          {filteredProducts.map((product: Product) => (
+          {filteredProducts.map((product) => (
             <SwiperSlide key={product.id}>
               <ProductCard product={product} />
             </SwiperSlide>
