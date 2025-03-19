@@ -6,15 +6,7 @@ import products from "@/data/product";
 import categories from "@/data/categories";
 import Image from "next/image";
 
-type Product = {
-  id: number;
-  image: string;
-  price?: string | number;
-  sku: string | number;
-  category: string;
-  supplier?: string;
-  description: string;
-}
+ 
 
 export default function ProductPage() {
   const searchParams = useSearchParams();
@@ -88,7 +80,7 @@ export default function ProductPage() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
           {filteredProducts.length > 0 ? (
-            filteredProducts.map((product:Product) => (
+            filteredProducts.map((product) => (
               <ProductCard product={product} key={product.id} />
             ))
           ) : (
