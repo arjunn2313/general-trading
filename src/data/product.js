@@ -1,4 +1,5 @@
 import {
+  bakingmachine,
   coffeeMachine,
   dishAndGlass,
   displayCases,
@@ -6,6 +7,8 @@ import {
   houseKeeping,
   iceAndBaking,
   iceMachines,
+  juicedispensor,
+  shawarmaMachine,
 } from "./categories";
 
 const products = [
@@ -1376,7 +1379,7 @@ const products = [
   },
   {
     id: 149,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/ew-01-aarka-original-imaf2h4kzzcfmfa5.webp",          
     sku: "NaN",
     description:"Single cone machine - electric Power: 1kw ",
@@ -1385,7 +1388,7 @@ const products = [
   },
   {
     id: 150,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/41SnqsINUkL._BO30,255,255,255_UF900,850_SR1910,1000,0,C_QL100_.jpg",          
     sku: "NaN",
     description:"Double cone machine - electric Power: 2kw ",
@@ -1394,7 +1397,7 @@ const products = [
   },
   {
     id: 151,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/cff-72.jpg",          
     sku: "NaN",
     description:" Cone baker. single head.",
@@ -1403,7 +1406,7 @@ const products = [
   },
   {
     id: 152,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/cone-baker-125x125.webp",          
     sku: "NaN",
     description:" Cone baker. single head.dim: 280 x 400 x 290 mm.",
@@ -1412,7 +1415,7 @@ const products = [
   },
   {
     id: 153,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/WATT_048cf6d1-7d25-455c-8575-4a438698caa2.webp",          
     sku: "NaN",
     description:" Cone baker. double head.dim:  500 x 360 x 270 mm..",
@@ -1421,7 +1424,7 @@ const products = [
   },
   {
     id: 154,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/6350f3a74c748652691911c7-110v-waffle-donut-maker-machine-12-hole.jpg",          
     sku: "NaN",
     description:"dounts baker. stainlees steel body, ",
@@ -1430,7 +1433,7 @@ const products = [
   },
   {
     id: 155,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/41BdxFBzMaL._AC_SY350_QL15_.jpg",          
     sku: "NaN",
     description:"pancake Machine with Top & Bottom Heater",
@@ -1439,7 +1442,7 @@ const products = [
   },
   {
     id: 156,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/images (12).jpeg",          
     sku: "NaN",
     description:" Cone baker. dim: 300 x 300 x 250  mm.",
@@ -1448,7 +1451,7 @@ const products = [
   },
   {
     id: 157,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/s-l960.webp",          
     sku: "NaN",
     description:"Waffle baker. dim: 300 x 300 x 250  mm.",
@@ -1457,7 +1460,7 @@ const products = [
   },
   {
     id: 158,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/Belgian-Waffle-Maker-Cone-Maker-and-Waffle-Iron-Round-Shape-Thin-Waffles_ce5e58e6-00c3-45cc-ba77-d93002ec0f52.cf28d5657bd2011bae47c976d97890f4.avif",          
     sku: "NaN",
     description:" Waffle baker. single head.  dim: 290 x 425 x 320 mm",
@@ -1466,7 +1469,7 @@ const products = [
   },
   {
     id: 159,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/40304-pic.jpg",          
     sku: "NaN",
     description:" Waffle baker. single head.  dim: 290 x 425 x 320 mm",
@@ -1475,7 +1478,7 @@ const products = [
   },
   {
     id: 160,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/waffle-maker.jpg",          
     sku: "NaN",
     description:" Waffle baker. single head.  dim: 290 x 425 x 320 mm",
@@ -1484,7 +1487,7 @@ const products = [
   },
   {
     id: 161,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/uk-elwb07-the-urban-kitchen-original-imaf4ydtbzjfzjtj.webp",          
     sku: "NaN",
     description:" Waffle baker. single head.  dim: 250 x 345 x 210 mm.",
@@ -1493,7 +1496,7 @@ const products = [
   },
   {
     id: 162,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/ba0002_l.webp",          
     sku: "NaN",
     description:" Waffle baker. double head. dim: 500 x 360 x 270 mm",
@@ -1502,7 +1505,7 @@ const products = [
   },
   {
     id: 163,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/bresco-square-waffle-maker-1-thick-1000x1000.jpg",          
     sku: "NaN",
     description:" Waffle baker. With 4 squares. single head.dim: 300 x 380 x 250 mm.",
@@ -1511,7 +1514,7 @@ const products = [
   },
   {
     id: 164,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/63594cdded659f5e2a119fa5-aldkitchen-belgian-waffle-iron-press.jpg",          
     sku: "NaN",
     description:" Waffle baker. With 2 squares. single head.dim:  310 x 380 x 250 mm.",
@@ -1520,7 +1523,7 @@ const products = [
   },
   {
     id: 165,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/stainless-steel-square-waffle-baker-maker20231208045435.jpg",          
     sku: "NaN",
     description:" Waffle baker. With 4 squares. single head.dim: 300 x 380 x 250 mm",
@@ -1529,7 +1532,7 @@ const products = [
   },
   {
     id: 166,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/images (13).jpeg",          
     sku: "NaN",
     description:" Waffle baker  double head. dim: 630 x 380 x 250 mm.",
@@ -1538,7 +1541,7 @@ const products = [
   },
   {
     id: 167,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/BHKE-FEFW-14_800x.webp",          
     sku: "NaN",
     description:" Waffle baker  single head.  dim: 360 x 330 x 245 mm.",
@@ -1547,7 +1550,7 @@ const products = [
   },
   {
     id: 168,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/41-y7vCDeTL._AC_UL600_SR600,600_.jpg",          
     sku: "NaN",
     description:"Waffle baker. Heart shape dim: 250 x 345 x 210 mm.",
@@ -1556,7 +1559,7 @@ const products = [
   },
   {
     id: 169,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/uk-elwb07-the-urban-kitchen-original-imaf4ydtbzjfzjtj (1).webp",          
     sku: "NaN",
     description:" Single waffle machine - electric ",
@@ -1565,7 +1568,7 @@ const products = [
   },
   {
     id: 170,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/new3 copy-550x550.jpg",          
     sku: "NaN",
     description:"Double  waffle machine - electric ",
@@ -1574,7 +1577,7 @@ const products = [
   },
   {
     id: 171,
-    category: iceAndBaking,
+    category: bakingmachine,
     image: "/product/lolly-waffle-machine20230823100250.jpeg",          
     sku: "NaN",
     description:" Sticks waffle baker.dim: 305 x 410 x 240 mm.",
@@ -1583,7 +1586,7 @@ const products = [
   },
   {
     id: 172,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/639c3ec706c6cc2733167119-eurodib-oasis1-cofrimell-1-2-6-gallon.jpg",          
     sku: "NaN",
     description:"Slush Machine  dim: 21 x 53 x 84  mm.",
@@ -1592,7 +1595,7 @@ const products = [
   },
   {
     id: 173,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/65f4eb50f945da457870b29e-cofrimell-slush-machine-parts.jpg",          
     sku: "NaN",
     description:"Slush Machine  capacity: 2 x 10 litres dim: 400 x 530 x 840 mm.",
@@ -1601,7 +1604,7 @@ const products = [
   },
   {
     id: 174,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/20240403084035-b0211601-5759-4d84-a00f-da1a58ab1825.jpg",          
     sku: "NaN",
     description:"Slush Machine  capacity: 3 x 10 litres dim: 600 x 530 x 840 mm.",
@@ -1610,7 +1613,7 @@ const products = [
   },
   {
     id: 175,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/41m6OrygmgL._AC_UF350,350_QL50_.jpg",          
     sku: "NaN",
     description:"Slush Machine  capacity: 10Lx1 litres dim:  380x550x980 mm.",
@@ -1619,7 +1622,7 @@ const products = [
   },
   {
     id: 176,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/41O9SVm5bTL.jpg",          
     sku: "NaN",
     description:"Slush Machine  capacity: 10Lx2 litres dim:: 450x500x820 mm.",
@@ -1628,7 +1631,7 @@ const products = [
   },
   {
     id: 177,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/51RJlals4rL._AC_UF350,350_QL80_.jpg",          
     sku: "NaN",
     description:"Slush Machine  capacity: 10Lx3 litres dim:: 720x550x980 mm.",
@@ -1638,7 +1641,7 @@ const products = [
   // juice dispensor
   {
     id: 178,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/cofrimell-cf-0014-single-bowl-coldream-cold-drink-dispenser.jpg",          
     sku: "NaN",
     description:"Juice dispenser cap: 1 x 12 ltr dim: 200 x 430 x 670 mm",
@@ -1647,7 +1650,7 @@ const products = [
   },
   {
     id: 179,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/61SQ9qFw-AL.jpg",          
     sku: "NaN",
     description:"Juice dispenser cap: 2 x 12 ltr dim: 400 x 430 x 670 mm",
@@ -1656,7 +1659,7 @@ const products = [
   },
   {
     id: 180,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/51YUzmX2GeL._AC_SY200_QL15_.jpg",          
     sku: "NaN",
     description:"Juice dispenser cap: 3 x 12 ltr dim: 600 x 430 x 670 mm",
@@ -1665,7 +1668,7 @@ const products = [
   },
   {
     id: 181,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/one-18l-tank-juice-dispenser-500x500.webp",          
     sku: "NaN",
     description:" Juice dispenser with  S/S handle, Mixing type , cooling only Capacity: 18L",
@@ -1674,7 +1677,7 @@ const products = [
   },
   {
     id: 182,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/18x2l-500x500.webp",          
     sku: "NaN",
     description:"Juice dispenser with  S/S handle, Mixing type cooling only Capacity: 18L x 2 ",
@@ -1683,7 +1686,7 @@ const products = [
   },
   {
     id: 183,
-    category: iceAndBaking,
+    category: juicedispensor,
     image: "/product/Refrigerated-Juice-Dispenser.jpg",          
     sku: "NaN",
     description:"Juice dispenser with  S/S handle, Mixing type cooling only Capacity: 18L x 3 ",
@@ -1692,7 +1695,7 @@ const products = [
   },
   {
     id: 184,
-    category: iceAndBaking,
+    category: shawarmaMachine,
     image: "/product/images (14).jpeg",          
     sku: "NaN",
     description:" Gas shawerma Machine Cap: 70 kg",
@@ -1701,7 +1704,7 @@ const products = [
   },
   {
     id: 185,
-    category: iceAndBaking,
+    category: shawarmaMachine,
     image: "/product/images (14).jpeg",          
     sku: "NaN",
     description:" Gas shawerma Machine Cap: 40 kg",
@@ -1710,7 +1713,7 @@ const products = [
   },
   {
     id: 186,
-    category: iceAndBaking,
+    category: shawarmaMachine,
     image: "/product/images (14).jpeg",          
     sku: "NaN",
     description:" Gas shawerma Machine Cap: 30 kg",
@@ -1719,7 +1722,7 @@ const products = [
   },
   {
     id: 187,
-    category: iceAndBaking,
+    category: shawarmaMachine,
     image: "/product/charcoal-shawarma-machine-500x500.webp",          
     sku: "NaN",
     description:"Charcoal shawerma Machine dim: 1280x 900 x 1600 mm",
@@ -1728,7 +1731,7 @@ const products = [
   },
   {
     id: 188,
-    category: iceAndBaking,
+    category: shawarmaMachine,
     image: "/product/SHT3B45.png",          
     sku: "NaN",
     description:"Gas shawerma Machine  dim: 500 x 600 x 1100 mm",
@@ -1737,7 +1740,7 @@ const products = [
   },
   {
     id: 189,
-    category: iceAndBaking,
+    category: shawarmaMachine,
     image: "/product/20220621064813-f5825eaf-8ee8-4c6f-8c28-deb626f97e54.jpg",          
     sku: "NaN",
     description:"Gas shawerma Machine dim: 1360x 700 x 1950 mm.",
@@ -1746,7 +1749,7 @@ const products = [
   },
   {
     id: 190,
-    category: iceAndBaking,
+    category: shawarmaMachine,
     image: "/product/20220621064813-f5825eaf-8ee8-4c6f-8c28-deb626f97e54.jpg",          
     sku: "NaN",
     description:"Gas shawerma Machine dim: 1100x 700 x 1950 mm",

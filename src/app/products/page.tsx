@@ -71,7 +71,7 @@ export default function ProductPage() {
                   loading="lazy"
                 />
               </div>
-              <p className="mt-2  text-sm font-medium">{subcategory.name}</p>
+              <p className="mt-2  text-sm  font-medium">{subcategory.name}</p>
             </div>
           ))}
         </div>

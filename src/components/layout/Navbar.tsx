@@ -48,14 +48,14 @@ export default function Navbar() {
         </div>
 
         {/* Search Bar */}
-        <div className="relative w-1/3 hidden md:block">
+        {/* <div className="relative w-1/3 hidden md:block">
           <input
             type="text"
             placeholder="Search Products..."
             className="w-full p-2 pl-4 pr-10 text-gray-700   rounded-lg bg-gray-100 focus:ring-2 focus:ring-gray-300"
           />
           <FaSearch className="absolute right-4 top-3 text-gray-500" />
-        </div>
+        </div> */}
 
         <div className="flex gap-6">
           <CatalogDownload />
