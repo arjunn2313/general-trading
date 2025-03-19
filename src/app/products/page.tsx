@@ -5,10 +5,19 @@ import ProductCard from "@/components/product/ProductCard";
 import products from "@/data/product";
 import categories from "@/data/categories";
 import Image from "next/image";
+import { Suspense } from "react";
 
- 
 
 export default function ProductPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProductPageContent />
+    </Suspense>
+  );
+}
+ 
+
+ function ProductPageContent() {
   const searchParams = useSearchParams();
   const categoryQuery = searchParams.get("category");
   const router = useRouter();
