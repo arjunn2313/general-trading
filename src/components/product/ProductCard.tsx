@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-interface Product {
+type Product = {
   id: number;
   image: string;
   price?: string | number;

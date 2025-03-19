@@ -7,7 +7,7 @@ import products from "../../data/product";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-interface Product {
+type Product = {
   id: number;
   image: string;
   price?: string | number;
