@@ -8,7 +8,6 @@ import Image from "next/image";
 
 interface Product {
   id: number;
-  name?: string;
   image: string;
   brand?: string;
   price?: string | number;
